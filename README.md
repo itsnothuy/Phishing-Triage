@@ -8,7 +8,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7.1-orange.svg)](https://scikit-learn.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![Home Page](assets/home_page.png)
+![Home Page](assets/icon.png)
 
 ## 🎯 **Project Overview**
 
