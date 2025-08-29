@@ -45,6 +45,44 @@ An enterprise-grade phishing detection system that combines **machine learning**
 
 ---
 
+## High-Level Workflow Diagram
+
+```mermaid
+graph TD
+    subgraph User Interaction
+        A[Frontend UI / API Client]
+    end
+
+    subgraph Backend API
+        B[FastAPI: main.py]
+        C[Analysis Pipeline: pipeline.py]
+    end
+
+    subgraph Core Analysis Modules
+        D[ML Scoring: predict.py, features.py]
+        E[Threat Intel: advanced_intel.py, urlhaus.py]
+        F[AI Summary: openai_enhancer.py]
+    end
+
+    subgraph Data & Reporting
+        G[Database: models.py, data/submissions.db]
+        H[Report Generation: render.py, templates/report.md.j2]
+    end
+
+    A -- "1. POST /submit-url" --> B
+    B -- "2. Create Submission in DB" --> G
+    B -- "3. Trigger Pipeline" --> C
+    C -- "4. Score URL" --> D
+    C -- "5. Enrich Data" --> E
+    C -- "6. Generate AI Summary" --> F
+    C -- "7. Build Report" --> H
+    C -- "8. Update DB with Report" --> G
+    A -- "9. GET /report/{id}" --> B
+    B -- "10. Retrieve Report from DB" --> G
+```
+
+---
+
 ## 🚀 **Technical Stack**
 
 ### **Backend & API**
