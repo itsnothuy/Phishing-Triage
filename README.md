@@ -8,6 +8,8 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7.1-orange.svg)](https://scikit-learn.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+![Home Page](assets/home_page.png)
+
 ## 🎯 **Project Overview**
 
 An enterprise-grade phishing detection system that combines **machine learning**, **threat intelligence**, and **automated analysis** to identify and assess phishing threats in real-time. Built for security operations centers (SOCs) and cybersecurity teams.
@@ -80,6 +82,24 @@ graph TD
     A -- "9. GET /report/{id}" --> B
     B -- "10. Retrieve Report from DB" --> G
 ```
+
+---
+
+## 🖼️ Visual Showcase
+
+### 🏠 Home Page
+![Home Page](assets/home_page.png)
+
+### ⚙️ API Documentation
+![API Page](assets/api_page.png)
+
+### 🛡️ Risk Analysis in Action
+
+#### ✅ Low Risk Result
+![Low Risk Result](assets/low_risk.gif)
+
+#### 🚨 High Risk Result
+![High Risk Result](assets/high_risk.gif)
 
 ---
 
