@@ -49,42 +49,6 @@ An enterprise-grade phishing detection system that combines **machine learning**
 
 ---
 
-## ⚡ **Quick Start**
-
-### **1. Clone & Setup**
-```bash
-git clone https://github.com/itsnothuy/Phishing-Triage.git
-cd Phishing-Triage
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### **2. Configure Environment**
-```bash
-cp .env.example .env
-# Add your API keys (URLhaus, VirusTotal)
-```
-
-### **3. Train ML Model**
-```bash
-python -m ml.train
-```
-
-### **4. Start API Server**
-```bash
-uvicorn api.main:app --host 0.0.0.0 --port 8000
-```
-
-### **5. Test the System**
-```bash
-python FINAL_TEST.py
-```
-
-**🌐 Access API Documentation:** `http://localhost:8000/docs`
-
----
-
 ## 🔬 **Features & Capabilities**
 
 ### **🧠 Machine Learning Engine**
@@ -278,6 +242,42 @@ make test
 - **Type Hints**: Full type annotation coverage
 - **Documentation**: Comprehensive docstrings
 - **Testing**: Pytest with 95%+ coverage
+
+---
+
+## ⚡ **Quick Start**
+
+### **1. Clone & Setup**
+```bash
+git clone https://github.com/itsnothuy/Phishing-Triage.git
+cd Phishing-Triage
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### **2. Configure Environment**
+```bash
+cp .env.example .env
+# Add your API keys (URLhaus, VirusTotal)
+```
+
+### **3. Train ML Model**
+```bash
+python -m ml.train
+```
+
+### **4. Start API Server**
+```bash
+uvicorn api.main:app --host 0.0.0.0 --port 8000
+```
+
+### **5. Test the System**
+```bash
+python FINAL_TEST.py
+```
+
+**🌐 Access API Documentation:** `http://localhost:8000/docs`
 
 ---
 
